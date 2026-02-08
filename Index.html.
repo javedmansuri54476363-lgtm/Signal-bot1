@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SIGNAL ONLINE</title>
+    <style>
+        body { background: #000; color: #0f0; text-align: center; font-family: sans-serif; }
+        .card { border: 2px solid #0f0; margin: 20px auto; padding: 20px; max-width: 350px; border-radius: 20px; box-shadow: 0 0 10px #0f0; }
+        input { width: 80%; padding: 10px; margin: 10px; background: #111; border: 1px solid #0f0; color: #fff; border-radius: 10px; }
+        button { width: 85%; padding: 15px; background: #0f0; border: none; font-weight: bold; border-radius: 10px; cursor: pointer; }
+        #res { font-size: 40px; margin: 20px; color: gold; text-shadow: 0 0 5px #fff; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>AI SERVER LIVE</h3>
+        <p>Pichle 3 Result Daalo (B/S)</p>
+        <input type="text" id="inp" placeholder="Example: BSS" maxlength="3">
+        <button onclick="check()">GET SIGNAL</button>
+        <div id="res">-- --</div>
+        <p style="font-size: 12px; color: #555;">Github Hosted - 100% Uptime</p>
+    </div>
+
+    <script>
+        function check() {
+            let s = document.getElementById('inp').value.toUpperCase();
+            let r = document.getElementById('res');
+            if(s.length < 2) return alert("Kam se kam 2 result daalo!");
+            
+            // Fast Analysis Logic
+            let last = s.charAt(s.length-1);
+            if(s === "BBB" || s === "SSS") {
+                r.innerText = (last === "B") ? "NEXT: SMALL" : "NEXT: BIG";
+            } else {
+                r.innerText = (last === "B") ? "NEXT: BIG" : "NEXT: SMALL";
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SIGNAL ONLINE</title>
+    <style>
+        body { background: #000; color: #0f0; text-align: center; font-family: sans-serif; }
+        .card { border: 2px solid #0f0; margin: 20px auto; padding: 20px; max-width: 350px; border-radius: 20px; box-shadow: 0 0 10px #0f0; }
+        input { width: 80%; padding: 10px; margin: 10px; background: #111; border: 1px solid #0f0; color: #fff; border-radius: 10px; }
+        button { width: 85%; padding: 15px; background: #0f0; border: none; font-weight: bold; border-radius: 10px; cursor: pointer; }
+        #res { font-size: 40px; margin: 20px; color: gold; text-shadow: 0 0 5px #fff; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>AI SERVER LIVE</h3>
+        <p>Pichle 3 Result Daalo (B/S)</p>
+        <input type="text" id="inp" placeholder="Example: BSS" maxlength="3">
+        <button onclick="check()">GET SIGNAL</button>
+        <div id="res">-- --</div>
+        <p style="font-size: 12px; color: #555;">Github Hosted - 100% Uptime</p>
+    </div>
+
+    <script>
+        function check() {
+            let s = document.getElementById('inp').value.toUpperCase();
+            let r = document.getElementById('res');
+            if(s.length < 2) return alert("Kam se kam 2 result daalo!");
+            
+            // Fast Analysis Logic
+            let last = s.charAt(s.length-1);
+            if(s === "BBB" || s === "SSS") {
+                r.innerText = (last === "B") ? "NEXT: SMALL" : "NEXT: BIG";
+            } else {
+                r.innerText = (last === "B") ? "NEXT: BIG" : "NEXT: SMALL";
+            }
+        }
+    </script>
+</body>
+</html>
